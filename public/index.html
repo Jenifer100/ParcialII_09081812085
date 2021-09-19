@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcial 2</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+
+  <!-- nav bar-->
+  <nav class="navbar">
+    <img src="img/logo.png" class="logo" alt="" />
+
+    <div class="nav">
+      <li class="">
+        <a class="nav-link " aria-current="page" href="./">Home</a>
+      </li>
+      <li class="">
+        <a class="nav-link" href="./serieTv.html">Series TV</a>
+      </li>
+      <li class="">
+        <a class="nav-link" href="./popularMovie.html">Populares</a>
+      </li>
+      <li class="">
+        <a class="nav-link" href="./estrenos.html">Estrenos</a>
+      </li>
+    </div>
+    <div class="join-box">
+      <p class="join-msg">Ilimitado TV shows & Pelis</p>
+
+      <button class="btn join-btn">Suscribase hoy</button>
+      <button class="btn">Ingresar</button>
+    </div>
+  </nav>
+
+  <!-- SEccion principal-->
+  <header class="main">
+    <h1 class="heading">Pelis</h1>
+    <p class="info">
+      Las mejores pelis de la Red, series y cosas para quitar el tiempo,
+      todo esta aqui
+    </p>
+    
+ 
+    <select class="form-select mb-3" aria-label="Default select example" id="clasificacionP">
+      <option selected>Seleccione la clasificacion</option>
+    </select>
+    <select class="form-select mb-3" aria-label="Default select example" id="aLanzamiento">
+      <option selected>Seleccione el año de la pelicula</option>
+ 
+    </select>
+    <div>
+      <form id="myform" class="combo"></form>
+    </div>
+    <div class="main"></div>
+
+  </header>
+
+  <!-- se hacen la referncia a los JS en este orden -->
+  <script src="js/api.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>>
